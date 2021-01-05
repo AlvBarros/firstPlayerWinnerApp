@@ -80,7 +80,6 @@ class Home extends React.Component{
                         <View style={styles.saldo}>
                             <Text style={styles.textoSaldoDisponivel}>Saldo disponível</Text>
                             <Text style={styles.textoSaldo}>R$ 100,00</Text>
-                            
                         </View>
                         <View style={styles.divisao}></View>
                     

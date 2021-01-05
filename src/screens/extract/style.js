@@ -14,8 +14,26 @@ const styles = StyleSheet.create({
         height: '10%',
         backgroundColor: '#FBAF00',
         flexDirection: 'row',
-        justifyContent:'space-around',
+        justifyContent:'space-between',
         alignItems: 'center',
+        paddingLeft: '5%',
+        paddingRight: '5%'
+    },
+    leftHeaderButton: {
+        width: '20%',
+        height: '100%',
+        justifyContent: 'center',
+        alignItems: 'flex-start'
+    },
+    centerHeader: {
+        width: '60%',
+        height: '100%',
+        justifyContent: 'center',
+        alignItems: 'center'
+    },
+    rightHeaderButton: {
+        width: '20%',
+        height: '100%'
     },
     textHeader: {
         fontWeight: '600'
@@ -23,12 +41,36 @@ const styles = StyleSheet.create({
     containerSaldo: {
         width: '100%',
         height: '30%',
-        backgroundColor: '#898989'
+        justifyContent: 'center',
+        alignItems: 'center'
+    },
+    saldo: {
+        width: '100%',
+        height: '30%',
+        paddingLeft: '5%',
+        paddingTop: '5%'
+    },
+    textoSaldoDisponivel: {
+        color: '#000',
+        fontSize: 12
+    },
+    textoSaldo: {
+        fontWeight: '900',
+        color: '#000',
+        fontSize: 18
+    },
+    scrollActions: {
+        width: '90%',
+        height: '69%',
+    },
+    divisao: {
+        width: '100%',
+        height: 2,
+        backgroundColor: '#000'
     },
     containerScroll: {
         width: '100%',
         height: '56%',
-        backgroundColor: '#494949'
     },
     containerFooter: {
         width: '100%',

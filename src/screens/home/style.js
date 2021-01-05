@@ -74,15 +74,15 @@ const styles = StyleSheet.create({
     },
     containerSaldo: {
         width: '100%',
-        height: '20%',
+        height: '22%',
         justifyContent: 'center',
         alignItems: 'center',
-        marginBottom: '5%'
+        marginBottom: '2%',
     },
     retanguloSaldo: {
         position: 'relative',
         width: '85%',
-        height: '60%',
+        height: '70%',
         backgroundColor: '#fff',
         borderRadius: 5,
         zIndex:10,
@@ -100,7 +100,7 @@ const styles = StyleSheet.create({
     },
     retanguloTransferencias: {
         width: '85%',
-        height: '40%',
+        height: '35%',
         backgroundColor: '#00AF54',
         borderRadius: 5,
         marginTop: -10,
