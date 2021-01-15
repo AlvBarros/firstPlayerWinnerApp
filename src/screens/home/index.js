@@ -20,10 +20,6 @@ class Home extends React.Component{
     }
 
     componentDidMount() {
-        let token = {token: store.getState().auth.token}
-        axios.post('/users/getUser', token).then( res => {
-            this.setState({nome: res.data.nome, saldo: `P$ ${res.data.saldo}.00`})
-        })
     }
 
     _renderItem = ({item, index}) => {

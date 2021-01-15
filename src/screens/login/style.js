@@ -16,10 +16,15 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         paddingBottom: '15%'
     },
-    logo: {
+    containerLogo: {
         width: '80%',
         height: '50%',
-        marginBottom: '5%'
+        justifyContent: 'flex-end',
+        alignItems: 'center',
+    },
+    logo: {
+        width: '70%',
+        height: '70%'
     },
     containerInferior: {
         flexDirection: 'column',

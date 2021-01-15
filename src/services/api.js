@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { store } from '../store';
 
-axios.defaults.baseURL = 'http://empreendedorismoufpi.com.br:21646/';
+axios.defaults.baseURL = 'localhost:3000/';
 axios.defaults.timeout = 30000
 
 axios.interceptors.request.use(
