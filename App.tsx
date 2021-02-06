@@ -1,36 +1,23 @@
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
-import { useFonts, 
-  Poppins_600SemiBold, 
-  Poppins_300Light, 
-  Poppins_400Regular,
-  Poppins_200ExtraLight,
-  Poppins_700Bold
-} from '@expo-google-fonts/poppins';
-
 import AuthflowNavigator from './src/navigators/Authflow';
-import { View, Text } from 'react-native';
+import { Provider, useDispatch } from 'react-redux';
+import SplashNavigator from './src/navigators/Splash';
+import { createStackNavigator } from '@react-navigation/stack';
+import { RootStore } from './src/redux/Root/store';
 
-export default function App() {
-  let [fontsLoaded] = useFonts({
-    Poppins_600SemiBold,
-    Poppins_300Light,
-    Poppins_400Regular,
-    Poppins_200ExtraLight,
-    Poppins_700Bold
-  });
-
-  if (!fontsLoaded) {
-    return (
-    <View>
-      <Text> Loading ... </Text>
-    </View>
-    );
-  } else {
-    return (
-      <NavigationContainer>
-        <AuthflowNavigator />
-      </NavigationContainer>
-    );
-  }
+const App: React.FunctionComponent<any> = (props:any) => {
+  const StackNavigator = createStackNavigator();
+  return (
+    <NavigationContainer>
+      <Provider store={RootStore}>
+        <StackNavigator.Navigator headerMode="none">
+          <StackNavigator.Screen name="Splash" component={SplashNavigator} />
+          <StackNavigator.Screen name="Authflow" component={AuthflowNavigator} />
+        </StackNavigator.Navigator>
+      </Provider>
+    </NavigationContainer>
+  );
 }
+
+export default App;
